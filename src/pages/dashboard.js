@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from '../components/Navbar';
-import Masterhead from '../components/Masterhead';
 import About from '../components/About';
 import Contact from "../components/Contact";
 import Footer from '../components/Footer';
@@ -23,7 +22,6 @@ function Dashboard() {
 
         <Route  path ="/login" element={<Login />}/>
 
-        <Route  path ="/masterhead" element={<Masterhead />}/>
 
         <Route  path ="/footer" element={<Footer />}/> 
       </Routes>

@@ -9,7 +9,7 @@ function Home() {
             src="https://wallpaperaccess.com/full/1700222.jpg"
             className="card-img"
             alt="Background"
-            height="1000px"
+            height="700px"
           />
           <div className="card-img-overlay d-flex flex-column justify-content-center">
             <div className="container">
