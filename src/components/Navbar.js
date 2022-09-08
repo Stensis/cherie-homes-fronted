@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Navbar() {
   return (
@@ -18,7 +18,8 @@ function Navbar() {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,13 +30,18 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/products">
-                  About Us
+                <a className="nav-link" href="/about">
+                  About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  Properties
+                <a className="nav-link" href="/vendor">
+                  Vendor
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/apartment">
+                  Apartment
                 </a>
               </li>
               <li className="nav-item">
@@ -48,7 +54,7 @@ function Navbar() {
         </div>
       </nav>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
