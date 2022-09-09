@@ -8,6 +8,7 @@ import { Routes, Route,} from "react-router-dom";
 import About from './components/About';
 import Vendor from './components/Vendor';
 import Homes from './components/Homes';
+import User from './components/user'
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route  path ="/homes" element={<Homes />}/>
         
         <Route  path ="/vendor" element={<Vendor />}/>  
+
+        <Route  path ="/user" element={<User />}/> 
 
       </Routes>
     </div>
