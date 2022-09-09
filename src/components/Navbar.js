@@ -40,8 +40,8 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/apartment">
-                  Apartment
+                <a className="nav-link" href="/homes">
+                  Homes
                 </a>
               </li>
               <li className="nav-item">
