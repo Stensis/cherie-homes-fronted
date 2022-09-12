@@ -60,4 +60,7 @@
   background-color: beige;
 }
 
-/* about */
+/* user */
+.buttonContainer{
+  width: 40%;
+}

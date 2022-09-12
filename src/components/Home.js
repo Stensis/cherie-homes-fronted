@@ -8,7 +8,7 @@ function Home() {
   const [houses, setHouses] = useState([]);
   async function getHouses() {
     try {
-      let res = await fetch("https://cheries-home-backend.herokuapp.com/houses");
+      let res = await fetch("https://backend-for-cherie-homes.herokuapp.com/houses");
       let obj = await res.json();
       // console.log(obj)
       setHouses(obj);
@@ -74,7 +74,8 @@ function Home() {
                   {/* <div className="card-body"> */}
                     <h5 className="card-title">{house.type_of_house}</h5>
                     <div className="image" key={image.id}>
-                      <img src={house.image_url} />
+                      <img src={house.image_url} width="30%" height="200"
+                      viewBox="0 0 318 180" />
                     </div>
                     <a href="#" className="btn btn-primary">
                     </a>

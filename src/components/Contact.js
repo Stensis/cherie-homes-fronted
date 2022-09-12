@@ -1,6 +1,5 @@
 import React from "react"; 
 import { Container, Row, Col } from "react-bootstrap";
-// import { contactConfig } from "../content_option"
 
 function Contact() {
     const contactConfig = {

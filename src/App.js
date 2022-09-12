@@ -8,7 +8,7 @@ import { Routes, Route,} from "react-router-dom";
 import About from './components/About';
 import Vendor from './components/Vendor';
 import Homes from './components/Homes';
-import User from './components/user'
+import User from './components/User'
 
 function App() {
   return (
