@@ -2,10 +2,13 @@ import React from "react";
 import { useState } from "react";
 
 function Home() {
+  const [image, setImage] = useState ([])
+  const [image_url, setImage_url] = ([])
+
   const [houses, setHouses] = useState([]);
   async function getHouses() {
     try {
-      let res = await fetch("http://localhost:9292/houses");
+      let res = await fetch("https://cheries-home-backend.herokuapp.com/houses");
       let obj = await res.json();
       // console.log(obj)
       setHouses(obj);
@@ -49,7 +52,7 @@ function Home() {
                             className="btn btn-primary"
                             type="button"
                           >
-                            Gallery
+                            Our Homes
                           </button>
                         </div>
                       </div>
@@ -64,35 +67,51 @@ function Home() {
       {houses.length === 0
         ? console.log("no houses found")
         : houses.map((house) => (
-              <div key={house.id} className="card mb-3">
-                <h3 className="card-header">{house.type_of_house}</h3>
-                <div className="card-body">
-                  <h5 className="card-title">{house.location}</h5>
-                </div>
-                <svg
-                  xmlns={house.picture_link}
-                  className="d-block user-select-none"
-                  width="100%"
-                  height="200"
-                  aria-label={house.type_of_house}
-                  focusable="false"
-                  role="img"
-                  preserveAspectRatio="xMidYMid slice"
-                  viewBox="0 0 318 180"
-                  
-                >
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item">
-                    Number of Rooms: {house.number_of_rooms}
-                  </li>
-                  <li className="list-group-item">View Day: {house.view_day}</li>
-                </ul>
-              </div>
+<>
+            {/* <div className=""> */}
+              {/* <div className="col-sm-6"> */}
+                {/* <div className="card"> */}
+                  {/* <div className="card-body"> */}
+                    <h5 className="card-title">{house.type_of_house}</h5>
+                    <div className="image" key={image.id}>
+                      <img src={house.image_url} />
+                    </div>
+                    <a href="#" className="btn btn-primary">
+                    </a>
+                  {/* </div> */}
+                {/* </div> */}
+              {/* </div> */}
+            {/* </div> */}
+</>
+            // <div key={house.id} classNameName="card mb-3">
+            //   <h3 classNameName="card-header">{house.type_of_house}</h3>
+            //   <div classNameName="card-body">
+            //     <h5 classNameName="card-title">{house.location}</h5>
+            //   </div>
+            //   <svg
+            //     xmlns={house.image_url}
+            //     classNameName="d-block user-select-none"
+            //     width="100%"
+            //     height="200"
+            //     aria-label={house.type_of_house}
+            //     focusable="false"
+            //     role="img"
+            //     preserveAspectRatio="xMidYMid slice"
+            //     viewBox="0 0 318 180"
+
+            //   >
+            //     <rect width="100%" height="100%" fill="#868e96"></rect>
+            //     <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+            //       Image cap
+            //     </text>
+            //   </svg>
+            //   <ul classNameName="list-group list-group-flush">
+            //     <li classNameName="list-group-item">
+            //       Number of Rooms: {house.number_of_rooms}
+            //     </li>
+            //     <li classNameName="list-group-item">View Day: {house.view_day}</li>
+            //   </ul>
+            // </div>
           ))}
     </>
   );

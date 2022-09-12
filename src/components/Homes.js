@@ -1,10 +1,12 @@
 import React from 'react'
 import '../App.css'
 import { useState } from 'react'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'
 
 function Homes() {
   // USE STATE
-
+  const [house, setHouse] = useState([])
   const [HouseType, setHouseType] = useState('')
   const [Location, setLocation] = useState('')
   const [EstimatedCost, setEstimatedCost] = useState('')
@@ -34,12 +36,22 @@ function Homes() {
       .then((data) => console.log('house:', data))
       .catch((err) => console.log(err))
   }
+ 
   // Delete
-  const deletehouse = (id) => {
-    fetch('http://localhost:9292/houses/'+id)
-      .then((data) => console.log('houses:', data))
-      .catch((err) => console.log(err))
+  function deletehouse(id){
+    fetch(`http://localhost:9292/houses/${id}`,{
+        method: "DELETE",
+    })
+    .then(r => r.json())
+    .then(() => {
+        const deleting = houses.filter((house) => house.id !== id)
+            setHouse(deleting)
+        })
   }
+
+
+
+
 
   return (
     <>
@@ -100,22 +112,6 @@ function Homes() {
         </button>
       </div>
 
-      {/* DISPLAY */}
-      {/* <div className="butto">
-        <button onClick class="btn btn-outline-primary">
-          Show House
-        </button>
-        {houses.map((key,val) => {
-          return (
-            <div>
-              <h3>key.HouseType:{val.HouseType}</h3>
-              <h3>key.PictureLink:{val.PictureLink}</h3>
-              <h3>key.Location:{val.HouseType}</h3>
-              <h3>key.EstimatedCost:{val.EstimatedCost}</h3>
-            </div>
-          )
-        })}
-      </div> */}
     </>
   )
 }

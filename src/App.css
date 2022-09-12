@@ -54,5 +54,10 @@
   margin-left: 45%;
 
 }
+.image img{
+  margin: 2%;
+  align-items: center;
+  background-color: beige;
+}
 
 /* about */

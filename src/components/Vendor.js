@@ -2,6 +2,7 @@ import React, {useEffect, useState}from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 import "../App.css"
+
 function Vendor(){
     const [vendor, setVendor] = useState([])
     useEffect(()=> {
