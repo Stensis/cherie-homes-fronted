@@ -1,8 +1,8 @@
 import React from 'react'
 import '../App.css'
 import { useState } from 'react'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button'
 
 function Homes() {
   // USE STATE
