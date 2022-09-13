@@ -15,14 +15,14 @@ function Homes() {
 
   // GET METHOD
   const houses = () => {
-    fetch('http://localhost:9292/houses')
+    fetch('https://backend-for-cherie-homes.herokuapp.com/houses')
       .then((data) => console.log('houses:', data))
       .catch((err) => console.log(err))
   }
 
   //POST METHOD
   const addHome = () => {
-    fetch('http://localhost:9292/create_house', {
+    fetch('https://backend-for-cherie-homes.herokuapp.com/houses', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -39,7 +39,7 @@ function Homes() {
  
   // Delete
   function deletehouse(id){
-    fetch(`http://localhost:9292/houses/${id}`,{
+    fetch(`https://backend-for-cherie-homes.herokuapp.com/houses/${id}`,{
         method: "DELETE",
     })
     .then(r => r.json())

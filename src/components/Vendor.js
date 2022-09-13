@@ -6,7 +6,7 @@ import "../App.css"
 function Vendor(){
     const [vendor, setVendor] = useState([])
     useEffect(()=> {
-        fetch("http://localhost:9292/vendors")
+        fetch("https://backend-for-cherie-homes.herokuapp.com/vendors")
         .then((res)=>  res.json())
         .then((data)=>{
             console.log(data)
@@ -14,7 +14,7 @@ function Vendor(){
         })
     }, [])
     function deleteVendor(id){
-        fetch(`http://localhost:9292/vendors/${id}`,{
+        fetch(`https://backend-for-cherie-homes.herokuapp.com/vendors/${id}`,{
             method: "DELETE",
         })
         .then(r => r.json())
