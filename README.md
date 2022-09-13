@@ -24,6 +24,7 @@ As a user of the website,you will be able to :
 
 ### Live Link
 - Click this link to view the live application 
+- Github url:https://github.com/Stensis/cherie-homes-fronted
 - https://cherie-fronted-homes.herokuapp.com/
 - 
 ### Technology  Used
@@ -40,6 +41,7 @@ As a user of the website,you will be able to :
 - the db has 3 models users,vendors and houses.
 - click the link below to view the live application.
 - https://backend-for-cherie-homes.herokuapp.com/
+Github url: https://github.com/Stensis/cherie-backend-homes
 
 MIT License
 
