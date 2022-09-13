@@ -1,11 +1,16 @@
-# CHERIE HOMES
+# CHERIE REAL ESTATES
 
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 
 - Made by Irene with ❤️
-
+  
+- <p>Home Page</p>
+  
  <img src="./public/Screenshot%20from%202022-09-13%2023-10-19.png"/>
+
+- <p>Users Page</p>
+  
  <img src="./public/Screenshot%20from%202022-09-13%2023-12-56.png">
 
 
