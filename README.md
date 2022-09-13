@@ -1,11 +1,45 @@
 # CHERIE HOMES
+
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 
-This is a frontend  that displays houses on sale.
+Made by Irene with ❤️
 
-Made by Irene with ❤️❤️
 
+ ## Description
+ <p> This is a frontend  that displays houses on sale.The database for this app was built with Active Record and Sinatra, and the front-end was built with React and styled with CSS.
+
+ [Go Back to the top](#Cherie-Real-Estate)
+
+
+ ## Features
+As a user of the website,you will be able to :
+1. Interact with the navigation seemlessly implemented with Javascript using Fetch
+2. Responsive Website for small screens implemented using Media Queries
+[Go Back to the top](#Cherie-Real-Estate)
+
+ ###  Requirements
+ * Access to  a computer or any other gadget
+ * Access to internet
+
+### Live Link
+- Click this link to view the live application 
+- https://cherie-fronted-homes.herokuapp.com/
+- 
+### Technology  Used
+* React-frontend
+* HTML - The Markup language was used in building the base structure of the webpage.
+* CSS - which was used to style the HTML structure to achieve the visual result with a big emphasis on { display:flex; }.
+* JavaScript - Mostly used to dynamically render the movies to DOM fetch data from the API and also improve interactivity with on the website for the user
+* Sinatra-ActiveRecord
+[Go Back to the top](#Cherie-Real-Estate)
+
+### Database used 
+- used heroku to deploy.
+- used sqlite3 for development and postgres for production.
+- the db has 3 models users,vendors and houses.
+- click the link below to view the live application.
+- https://backend-for-cherie-homes.herokuapp.com/
 
 MIT License
 
