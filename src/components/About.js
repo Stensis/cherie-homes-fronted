@@ -8,10 +8,12 @@ function About() {
       <p>Hello, wishes from cheriehomes@gmail.com</p>
       <br />
       <p>
-      Cherie real estate is different by design. Our work is much more than real estate. Our work is your life, your dreams, and building your legacy. We will be the catalyst for change in real estate by revolutionizing the way the industry does business and serves others.
+        Cherie real estate is different by design. Our work is much more than
+        real estate. Our work is your life, your dreams, and building your
+        legacy. We will be the catalyst for change in real estate by
+        revolutionizing the way the industry does business and serves others.
       </p>
-      
-    
+
       <br />
 
       <h3>Browse through some of our houses video</h3>
@@ -26,7 +28,6 @@ function About() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe> */}
-        
       </div>
     </div>
   );

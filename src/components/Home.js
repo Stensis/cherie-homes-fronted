@@ -2,13 +2,15 @@ import React from "react";
 import { useState } from "react";
 
 function Home() {
-  const [image, setImage] = useState ([])
-  const [image_url, setImage_url] = ([])
+  const [image, setImage] = useState([]);
+  const [image_url, setImage_url] = [];
 
   const [houses, setHouses] = useState([]);
   async function getHouses() {
     try {
-      let res = await fetch("https://backend-for-cherie-homes.herokuapp.com/houses");
+      let res = await fetch(
+        "https://backend-for-cherie-homes.herokuapp.com/houses"
+      );
       let obj = await res.json();
       // console.log(obj)
       setHouses(obj);
@@ -67,23 +69,26 @@ function Home() {
       {houses.length === 0
         ? console.log("no houses found")
         : houses.map((house) => (
-<>
-            {/* <div className=""> */}
+            <>
+              {/* <div className=""> */}
               {/* <div className="col-sm-6"> */}
-                {/* <div className="card"> */}
-                  {/* <div className="card-body"> */}
-                    <h5 className="card-title">{house.type_of_house}</h5>
-                    <div className="image" key={image.id}>
-                      <img src={house.image_url} width="30%" height="200"
-                      viewBox="0 0 318 180" />
-                    </div>
-                    <a href="#" className="btn btn-primary">
-                    </a>
-                  {/* </div> */}
-                {/* </div> */}
+              {/* <div className="card"> */}
+              {/* <div className="card-body"> */}
+              <h5 className="card-title">{house.type_of_house}</h5>
+              <div className="image" key={image.id}>
+                <img
+                  src={house.image_url}
+                  width="30%"
+                  height="200"
+                  viewBox="0 0 318 180"
+                />
+              </div>
+              <a href="#" className="btn btn-primary"></a>
               {/* </div> */}
-            {/* </div> */}
-</>
+              {/* </div> */}
+              {/* </div> */}
+              {/* </div> */}
+            </>
             // <div key={house.id} classNameName="card mb-3">
             //   <h3 classNameName="card-header">{house.type_of_house}</h3>
             //   <div classNameName="card-body">
